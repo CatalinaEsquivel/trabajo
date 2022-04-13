@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/jpg" href="img/loogo.jpg">
+    <title>IniciarSesión/Registrar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="formulario-box">
+            <div class="button-box">
+                <div id="elegir"></div>
+                <button type="button" class="toggle-btn" onclick="inicioSesion()">Iniciar Sesión</button>
+                <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/tiendacazabikepapudo/"><img src="img/icono_facebook.jpg" alt="icono_facebook"></a>
+                <a href="https://www.youtube.com/channel/UCJdCBfyV6sxrt_1olD7jRxQ"><img src="img/icono_youtube.jpg" alt="icono_youtube"></a>
+                <a href="https://www.instagram.com/cazabikepapudo/"><img src="img/icono_instagram.jpg" alt="icono_instagram"></a>
+            </div>
+            <form id="inicioSesion" class="input-ground">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Recordar contraseña.</span>
+                <button type="submit" class="submit-btn">Ingresar</button>
+            </form>
+            <form id="registrar" class="input-ground">
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <input type="email" class="input-field" placeholder="Correo" required>
+                <input type="password" class="input-field" placeholder="Contraseña" required>
+                <input type="checkbox" class="check-box"><span>Acepto los términos y Condiciones.</span>
+                <button type="submit" class="submit-btn">Registrar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        var x = document.getElementById("inicioSesion");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function inicioSesion(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function registrar(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "120px";
+        } 
+    </script>
+</body>
+</html>
